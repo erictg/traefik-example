@@ -1,0 +1,14 @@
+version: "3"
+services:
+  proxy:
+    image: test_nginx
+    ports:
+    - "8080:8080"
+  api1:
+    image: api_1
+    ports:
+    - "8081:8081"
+  api2:
+    image: api_2
+    ports:
+    - "8082:8082"
